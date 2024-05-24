@@ -227,19 +227,29 @@ const Home = () => {
     }
     switch (value) {
       case '1':
-        setTablets(handel1(v));
+        handel1(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '2':
-        setTablets(handel2(v));
+        handel2(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '3':
-        setTablets(handel3(v));
+        handel3(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '4':
-        setTablets(handel4(v));
+        handel4(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '5':
-        setTablets(handel5(v));
+        handel5(v).then(res => {
+          setTablets(res);
+        });
         break;
     }
   };
@@ -251,82 +261,134 @@ const Home = () => {
     }
     switch (valued) {
       case '6':
-        setTabletsd(handel6(d));
+        handel6(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '7':
-        setTabletsd(handel7(d));
+        handel7(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '8':
-        setTabletsd(handel8(d));
+        handel8(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '9':
-        setTabletsd(handel9(d));
+        handel9(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '10':
-        setTabletsd(handel10(d));
+        handel10(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '11':
-        setTabletsd(handel11(d));
+        handel11(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '12':
-        setTabletsd(handel12(d));
+        handel12(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '13':
-        setTabletsd(handel13(d));
+        handel13(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '14':
-        setTabletsd(handel14(d));
+        handel14(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '15':
-        setTabletsd(handel15(d));
+        handel15(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '16':
-        setTabletsd(handel16(d));
+        handel16(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '17':
-        setTabletsd(handel17(d));
+        handel17(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '18':
-        setTabletsd(handel18(d));
+        handel18(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '19':
-        setTabletsd(handel19(d));
+        handel19(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '20':
-        setTabletsd(handel20(d));
+        handel20(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '21':
-        setTabletsd(handel21(d));
+        handel21(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '22':
-        setTabletsd(handel22(d));
+        handel22(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '23':
-        setTabletsd(handel23(d));
+        handel23(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '24':
-        setTabletsd(handel24(d));
+        handel24(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '25':
-        setTabletsd(handel25(d));
+        handel25(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '26':
-        setTabletsd(handel26(d));
+        handel26(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '27':
-        setTabletsd(handel27(d));
+        handel27(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '28':
-        setTabletsd(handel28(d));
+        handel28(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '29':
-        setTabletsd(handel29(d));
+        handel29(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '30':
-        setTabletsd(handel30(d));
+        handel30(v).then(res => {
+          setTablets(res);
+        });
         break;
       case '31':
-        setTabletsd(handel31(d));
+        handel31(v).then(res => {
+          setTablets(res);
+        });
         break;
     }
   };
@@ -449,6 +511,9 @@ const Home = () => {
                 <DataTable.Title style={styles.center} numeric>
                   متراژ مصرفی
                 </DataTable.Title>
+                <DataTable.Title style={styles.center} numeric>
+                  قیمت کی پلاس
+                </DataTable.Title>
               </DataTable.Header>
               {tablets.map((item, index) => (
                 <DataTable.Row key={index}>
@@ -457,6 +522,9 @@ const Home = () => {
                   </DataTable.Cell>
                   <DataTable.Cell style={styles.center} numeric>
                     {item.meghdar}
+                  </DataTable.Cell>
+                  <DataTable.Cell style={styles.center} numeric>
+                    {item.price}
                   </DataTable.Cell>
                 </DataTable.Row>
               ))}
@@ -473,6 +541,9 @@ const Home = () => {
                 <DataTable.Title style={styles.center} numeric>
                   متراژ مصرفی
                 </DataTable.Title>
+                <DataTable.Title style={styles.center} numeric>
+                  قیمت کی پلاس
+                </DataTable.Title>
               </DataTable.Header>
               {tabletsd.map((item, index) => (
                 <DataTable.Row key={index}>
@@ -481,6 +552,9 @@ const Home = () => {
                   </DataTable.Cell>
                   <DataTable.Cell style={styles.center} numeric>
                     {item.meghdar}
+                  </DataTable.Cell>
+                  <DataTable.Cell style={styles.center} numeric>
+                    {item.price}
                   </DataTable.Cell>
                 </DataTable.Row>
               ))}
