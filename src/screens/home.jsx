@@ -261,133 +261,133 @@ const Home = () => {
     }
     switch (valued) {
       case '6':
-        handel6(v).then(res => {
-          setTablets(res);
+        handel6(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '7':
-        handel7(v).then(res => {
-          setTablets(res);
+        handel7(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '8':
-        handel8(v).then(res => {
-          setTablets(res);
+        handel8(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '9':
-        handel9(v).then(res => {
-          setTablets(res);
+        handel9(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '10':
-        handel10(v).then(res => {
-          setTablets(res);
+        handel10(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '11':
-        handel11(v).then(res => {
-          setTablets(res);
+        handel11(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '12':
-        handel12(v).then(res => {
-          setTablets(res);
+        handel12(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '13':
-        handel13(v).then(res => {
-          setTablets(res);
+        handel13(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '14':
-        handel14(v).then(res => {
-          setTablets(res);
+        handel14(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '15':
-        handel15(v).then(res => {
-          setTablets(res);
+        handel15(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '16':
-        handel16(v).then(res => {
-          setTablets(res);
+        handel16(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '17':
-        handel17(v).then(res => {
-          setTablets(res);
+        handel17(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '18':
-        handel18(v).then(res => {
-          setTablets(res);
+        handel18(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '19':
-        handel19(v).then(res => {
-          setTablets(res);
+        handel19(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '20':
-        handel20(v).then(res => {
-          setTablets(res);
+        handel20(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '21':
-        handel21(v).then(res => {
-          setTablets(res);
+        handel21(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '22':
-        handel22(v).then(res => {
-          setTablets(res);
+        handel22(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '23':
-        handel23(v).then(res => {
-          setTablets(res);
+        handel23(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '24':
-        handel24(v).then(res => {
-          setTablets(res);
+        handel24(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '25':
-        handel25(v).then(res => {
-          setTablets(res);
+        handel25(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '26':
-        handel26(v).then(res => {
-          setTablets(res);
+        handel26(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '27':
-        handel27(v).then(res => {
-          setTablets(res);
+        handel27(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '28':
-        handel28(v).then(res => {
-          setTablets(res);
+        handel28(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '29':
-        handel29(v).then(res => {
-          setTablets(res);
+        handel29(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '30':
-        handel30(v).then(res => {
-          setTablets(res);
+        handel30(d).then(res => {
+          setTabletsd(res);
         });
         break;
       case '31':
-        handel31(v).then(res => {
-          setTablets(res);
+        handel31(d).then(res => {
+          setTabletsd(res);
         });
         break;
     }
