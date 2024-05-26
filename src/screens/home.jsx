@@ -207,6 +207,15 @@ const data2 = [
   {label: 'دیوار', value: 'divar'},
 ];
 
+const data3 = [
+  {label: 'کی پلاس', value: 'kplus'},
+  {label: 'متفرقه با ضخامت 0.42', value: '042'},
+  {label: 'متفرقه با ضخامت 0.46', value: '046'},
+  {label: 'متفرقه با ضخامت 0.48', value: '048'},
+  {label: 'متفرقه با ضخامت 0.55', value: '055'},
+  {label: 'متفرقه با ضخامت 0.58', value: '058'},
+];
+
 const Home = () => {
   const [saze, setSaze] = useState(null);
   const [isFocusS, setIsFocusS] = useState(false);
@@ -218,6 +227,10 @@ const Home = () => {
   const [tabletsd, setTabletsd] = useState(null);
   const [v, setV] = useState(null);
   const [d, setD] = useState(null);
+  const [o, setO] = useState(null);
+  const [ofocous, setOfocous] = useState(false);
+  const [b, setB] = useState(null);
+  const [bfocus, setBfocus] = useState(false);
   // @ts-ignore
 
   const handelshow = () => {
@@ -227,27 +240,27 @@ const Home = () => {
     }
     switch (value) {
       case '1':
-        handel1(v).then(res => {
+        handel1(v, b).then(res => {
           setTablets(res);
         });
         break;
       case '2':
-        handel2(v).then(res => {
+        handel2(v, b).then(res => {
           setTablets(res);
         });
         break;
       case '3':
-        handel3(v).then(res => {
+        handel3(v, b).then(res => {
           setTablets(res);
         });
         break;
       case '4':
-        handel4(v).then(res => {
+        handel4(v, b).then(res => {
           setTablets(res);
         });
         break;
       case '5':
-        handel5(v).then(res => {
+        handel5(v, b).then(res => {
           setTablets(res);
         });
         break;
@@ -261,132 +274,132 @@ const Home = () => {
     }
     switch (valued) {
       case '6':
-        handel6(d).then(res => {
+        handel6(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '7':
-        handel7(d).then(res => {
+        handel7(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '8':
-        handel8(d).then(res => {
+        handel8(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '9':
-        handel9(d).then(res => {
+        handel9(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '10':
-        handel10(d).then(res => {
+        handel10(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '11':
-        handel11(d).then(res => {
+        handel11(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '12':
-        handel12(d).then(res => {
+        handel12(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '13':
-        handel13(d).then(res => {
+        handel13(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '14':
-        handel14(d).then(res => {
+        handel14(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '15':
-        handel15(d).then(res => {
+        handel15(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '16':
-        handel16(d).then(res => {
+        handel16(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '17':
-        handel17(d).then(res => {
+        handel17(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '18':
-        handel18(d).then(res => {
+        handel18(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '19':
-        handel19(d).then(res => {
+        handel19(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '20':
-        handel20(d).then(res => {
+        handel20(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '21':
-        handel21(d).then(res => {
+        handel21(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '22':
-        handel22(d).then(res => {
+        handel22(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '23':
-        handel23(d).then(res => {
+        handel23(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '24':
-        handel24(d).then(res => {
+        handel24(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '25':
-        handel25(d).then(res => {
+        handel25(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '26':
-        handel26(d).then(res => {
+        handel26(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '27':
-        handel27(d).then(res => {
+        handel27(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '28':
-        handel28(d).then(res => {
+        handel28(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '29':
-        handel29(d).then(res => {
+        handel29(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '30':
-        handel30(d).then(res => {
+        handel30(d, o).then(res => {
           setTabletsd(res);
         });
         break;
       case '31':
-        handel31(d).then(res => {
+        handel31(d, o).then(res => {
           setTabletsd(res);
         });
         break;
@@ -470,6 +483,34 @@ const Home = () => {
           <></>
         )}
         {value != null && saze == 'saghf' ? (
+          <Dropdown
+            style={[styles.dropdown, isFocus && {borderColor: 'blue'}]}
+            placeholderStyle={styles.placeholderStyle}
+            selectedTextStyle={styles.selectedTextStyle}
+            inputSearchStyle={styles.inputSearchStyle}
+            iconStyle={styles.iconStyle}
+            data={data3}
+            search
+            maxHeight={300}
+            labelField="label"
+            valueField="value"
+            placeholder={
+              !bfocus ? 'نوع اجناس مورد نظر را انتخاب نمایید' : '...'
+            }
+            searchPlaceholder="جست و جو"
+            value={valued}
+            onFocus={() => setBfocus(true)}
+            onBlur={() => setBfocus(false)}
+            onChange={item => {
+              setB(item.value);
+              setBfocus(false);
+            }}
+          />
+        ) : (
+          <></>
+        )}
+
+        {value != null && saze == 'saghf' && b != null ? (
           <>
             <TextInput
               placeholder={'متراژ نهایی را وارد نمایید'}
@@ -486,7 +527,36 @@ const Home = () => {
         ) : (
           <Text />
         )}
+
         {valued != null && saze == 'divar' ? (
+          <Dropdown
+            style={[styles.dropdown, isFocus && {borderColor: 'blue'}]}
+            placeholderStyle={styles.placeholderStyle}
+            selectedTextStyle={styles.selectedTextStyle}
+            inputSearchStyle={styles.inputSearchStyle}
+            iconStyle={styles.iconStyle}
+            data={data3}
+            search
+            maxHeight={300}
+            labelField="label"
+            valueField="value"
+            placeholder={
+              !bfocus ? 'نوع اجناس مورد نظر را انتخاب نمایید' : '...'
+            }
+            searchPlaceholder="جست و جو"
+            value={valued}
+            onFocus={() => setOfocous(true)}
+            onBlur={() => setOfocous(false)}
+            onChange={item => {
+              setO(item.value);
+              setOfocous(false);
+            }}
+          />
+        ) : (
+          <></>
+        )}
+
+        {valued != null && saze == 'divar' && o != null ? (
           <>
             <TextInput
               placeholder={'متراژ نهایی را وارد نمایید'}
@@ -512,7 +582,7 @@ const Home = () => {
                   متراژ مصرفی
                 </DataTable.Title>
                 <DataTable.Title style={styles.center} numeric>
-                  قیمت کی پلاس
+                  قیمت {b}
                 </DataTable.Title>
               </DataTable.Header>
               {tablets.map((item, index) => (
@@ -542,7 +612,7 @@ const Home = () => {
                   متراژ مصرفی
                 </DataTable.Title>
                 <DataTable.Title style={styles.center} numeric>
-                  قیمت کی پلاس
+                  قیمت {o}
                 </DataTable.Title>
               </DataTable.Header>
               {tabletsd.map((item, index) => (

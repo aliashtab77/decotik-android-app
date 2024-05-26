@@ -1,7 +1,14 @@
 //دیوار جدا کننده با یک ردیف سازه و دو لایه صفحه گچی
 //استاندارد DIN
 // 15 cm
-import {givePrices} from './price';
+import {
+  givePrices,
+  givePrices042,
+  givePrices046,
+  givePrices048,
+  givePrices055,
+  givePrices058,
+} from './price';
 function round(num) {
   return Math.round((num + Number.EPSILON) * 100) / 100;
 }
@@ -21,11 +28,40 @@ const data = [
 ];
 const price = [];
 
-export async function handel17(v) {
+export async function handel17(v, o) {
   const x = Number(v);
-  await givePrices().then(res => {
-    price.push(res);
-  });
+  switch (o) {
+    case 'kplus':
+      await givePrices().then(res => {
+        price.push(res);
+      });
+      break;
+    case '042':
+      await givePrices042().then(res => {
+        price.push(res);
+      });
+      break;
+    case '046':
+      await givePrices046().then(res => {
+        price.push(res);
+      });
+      break;
+    case '048':
+      await givePrices048().then(res => {
+        price.push(res);
+      });
+      break;
+    case '055':
+      await givePrices055().then(res => {
+        price.push(res);
+      });
+      break;
+    case '058':
+      await givePrices058().then(res => {
+        price.push(res);
+      });
+      break;
+  }
   const result = [];
   data.forEach(item => {
     const zz = round(item.z * x);
