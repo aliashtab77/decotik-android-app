@@ -231,6 +231,7 @@ const Home = () => {
   const [ofocous, setOfocous] = useState(false);
   const [b, setB] = useState(null);
   const [bfocus, setBfocus] = useState(false);
+  const [fibalPrice, setFibalPrice] = useState(0);
   // @ts-ignore
 
   const handelshow = () => {
@@ -241,27 +242,32 @@ const Home = () => {
     switch (value) {
       case '1':
         handel1(v, b).then(res => {
-          setTablets(res);
+          setTablets(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '2':
         handel2(v, b).then(res => {
-          setTablets(res);
+          setTablets(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '3':
         handel3(v, b).then(res => {
-          setTablets(res);
+          setTablets(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '4':
         handel4(v, b).then(res => {
-          setTablets(res);
+          setTablets(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '5':
         handel5(v, b).then(res => {
-          setTablets(res);
+          setTablets(res.result);
+          setFibalPrice(res.fi);
         });
         break;
     }
@@ -275,132 +281,158 @@ const Home = () => {
     switch (valued) {
       case '6':
         handel6(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '7':
         handel7(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '8':
         handel8(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '9':
         handel9(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '10':
         handel10(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '11':
         handel11(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '12':
         handel12(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '13':
         handel13(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '14':
         handel14(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '15':
         handel15(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '16':
         handel16(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '17':
         handel17(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '18':
         handel18(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '19':
         handel19(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '20':
         handel20(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '21':
         handel21(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '22':
         handel22(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '23':
         handel23(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '24':
         handel24(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '25':
         handel25(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '26':
         handel26(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '27':
         handel27(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '28':
         handel28(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '29':
         handel29(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '30':
         handel30(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
       case '31':
         handel31(d, o).then(res => {
-          setTabletsd(res);
+          setTabletsd(res.result);
+          setFibalPrice(res.fi);
         });
         break;
     }
@@ -599,6 +631,7 @@ const Home = () => {
                 </DataTable.Row>
               ))}
             </DataTable>
+            <Text style={styles.finalprice}>مجموع هزینه ها {fibalPrice}</Text>
           </>
         ) : (
           <Text />
@@ -629,6 +662,7 @@ const Home = () => {
                 </DataTable.Row>
               ))}
             </DataTable>
+            <Text style={styles.finalprice}>مجموع هزینه ها {fibalPrice}</Text>
           </>
         ) : (
           <Text />
@@ -690,6 +724,14 @@ const styles = StyleSheet.create({
   center: {
     justifyContent: 'center',
   },
+  finalprice:{
+    backgroundColor:'green',
+    color:'white',
+    fontSize: 20,
+    padding:5,
+    margin:5,
+    borderRadius:8,
+  }
 });
 
 export default React.memo(Home);

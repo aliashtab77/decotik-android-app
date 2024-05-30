@@ -31,9 +31,10 @@ const data = [
   {n: 'پودر ماستیک(1)', z: 0.5},
   {n: 'نوار درزگیر', z: 1.1},
 ];
-const price = [];
+
 
 export async function handel1(v, o) {
+  const price = [];
   const x = Number(v);
 
   switch (o) {
@@ -69,11 +70,16 @@ export async function handel1(v, o) {
       break;
   }
 
+  let fi = 0;
+
   const result = [];
   data.forEach(item => {
     const zz = round(item.z * x);
     let mablagh = round((price[0][item.n] * zz * 112) / 100);
+    fi += mablagh;
     result.push({name: item.n, meghdar: zz, price: mablagh});
   });
-  return result;
+
+
+  return { result:result, fi:round(fi) } ;
 }

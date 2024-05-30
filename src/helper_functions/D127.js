@@ -25,9 +25,10 @@ const data = [
   {n: 'TN25/ SN30', z: 25},
   {n: 'بتونه TRIAS', z: 0.1},
 ];
-const price = [];
+
 
 export async function handel5(v, o) {
+  const price = [];
   const x = Number(v);
   switch (o) {
     case 'kplus':
@@ -61,12 +62,15 @@ export async function handel5(v, o) {
       });
       break;
   }
+  let fi = 0;
+
   const result = [];
   data.forEach(item => {
     const zz = round(item.z * x);
     let mablagh = round((price[0][item.n] * zz * 112) / 100);
+    fi += mablagh;
 
     result.push({name: item.n, meghdar: zz, price: mablagh});
   });
-  return result;
+  return { result:result, fi:round(fi) }
 }

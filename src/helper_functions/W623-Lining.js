@@ -11,7 +11,6 @@ import {
 function round(num) {
   return Math.round((num + Number.EPSILON) * 100) / 100;
 }
-const price = [];
 
 const data = [
   {n: 'سازه F47', z: 2},
@@ -29,6 +28,8 @@ const data = [
 ];
 export async function handel31(v, o) {
   const x = Number(v);
+  const price = [];
+
   switch (o) {
     case 'kplus':
       await givePrices().then(res => {
@@ -61,12 +62,15 @@ export async function handel31(v, o) {
       });
       break;
   }
+  let fi = 0;
+
   const result = [];
   data.forEach(item => {
     const zz = round(item.z * x);
     let mablagh = round((price[0][item.n] * zz * 112) / 100);
+    fi += mablagh;
 
     result.push({name: item.n, meghdar: zz, price: mablagh});
   });
-  return result;
+  return { result:result, fi:round(fi) }
 }
