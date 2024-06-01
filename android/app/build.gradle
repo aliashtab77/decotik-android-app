@@ -113,6 +113,10 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    implementation project(':react-native-html-to-pdf')
+    implementation project(':rn-fetch-blob')
+    implementation project(':react-native-file-viewer')
+
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)

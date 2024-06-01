@@ -10,37 +10,37 @@ import {
 import {Dropdown} from 'react-native-element-dropdown';
 import Ripple from 'react-native-material-ripple';
 import {DataTable} from 'react-native-paper';
-import {handel1} from '../helper_functions/d112a1';
-import {handel2} from '../helper_functions/d112a2';
-import {handel3} from '../helper_functions/d112b1';
-import {handel4} from '../helper_functions/d112b2';
-import {handel5} from '../helper_functions/D127';
-import {handel6} from '../helper_functions/W111-NF-7.5cm';
-import {handel7} from '../helper_functions/W111-DIN-7.5cm';
-import {handel8} from '../helper_functions/W11-NF-9.5cm';
-import {handel9} from '../helper_functions/W11-DIN-9.5cm';
-import {handel10} from '../helper_functions/W111-NF-12.5cm';
-import {handel11} from '../helper_functions/W111-DIN-12.5cm';
-import {handel12} from '../helper_functions/W112-NF-10cm';
-import {handel13} from '../helper_functions/W112-DIN-10cm';
-import {handel14} from '../helper_functions/W112-NF-12cm';
-import {handel15} from '../helper_functions/W112-DIN-12cm';
-import {handel16} from '../helper_functions/W112-NF-15cm';
-import {handel17} from '../helper_functions/W112-DIN-15cm';
-import {handel18} from '../helper_functions/W115-NF-15.5cm';
-import {handel19} from '../helper_functions/W115-DIN-15.5cm';
-import {handel20} from '../helper_functions/W115-NF-19.5cm';
-import {handel21} from '../helper_functions/W115-DIN-19.5cm';
-import {handel22} from '../helper_functions/W115-NF-25.5sm';
-import {handel23} from '../helper_functions/W115-DIN-25.5cm';
-import {handel24} from '../helper_functions/W116-NF-22sm';
-import {handel25} from '../helper_functions/W116-DIN-22cm';
-import {handel26} from '../helper_functions/W116-NF-26sm';
-import {handel27} from '../helper_functions/W116-26cm';
-import {handel28} from '../helper_functions/W116-NF-32sm';
-import {handel29} from '../helper_functions/W116-DIN-32cm';
-import {handel30} from '../helper_functions/W611-Lining';
-import {handel31} from '../helper_functions/W623-Lining';
+import {handel1} from '../helper_functions1/d112a1';
+import {handel2} from '../helper_functions1/d112a2';
+import {handel3} from '../helper_functions1/d112b1';
+import {handel4} from '../helper_functions1/d112b2';
+import {handel5} from '../helper_functions1/D127';
+import {handel6} from '../helper_functions1/W111-NF-7.5cm';
+import {handel7} from '../helper_functions1/W111-DIN-7.5cm';
+import {handel8} from '../helper_functions1/W11-NF-9.5cm';
+import {handel9} from '../helper_functions1/W11-DIN-9.5cm';
+import {handel10} from '../helper_functions1/W111-NF-12.5cm';
+import {handel11} from '../helper_functions1/W111-DIN-12.5cm';
+import {handel12} from '../helper_functions1/W112-NF-10cm';
+import {handel13} from '../helper_functions1/W112-DIN-10cm';
+import {handel14} from '../helper_functions1/W112-NF-12cm';
+import {handel15} from '../helper_functions1/W112-DIN-12cm';
+import {handel16} from '../helper_functions1/W112-NF-15cm';
+import {handel17} from '../helper_functions1/W112-DIN-15cm';
+import {handel18} from '../helper_functions1/W115-NF-15.5cm';
+import {handel19} from '../helper_functions1/W115-DIN-15.5cm';
+import {handel20} from '../helper_functions1/W115-NF-19.5cm';
+import {handel21} from '../helper_functions1/W115-DIN-19.5cm';
+import {handel22} from '../helper_functions1/W115-NF-25.5sm';
+import {handel23} from '../helper_functions1/W115-DIN-25.5cm';
+import {handel24} from '../helper_functions1/W116-NF-22sm';
+import {handel25} from '../helper_functions1/W116-DIN-22cm';
+import {handel26} from '../helper_functions1/W116-NF-26sm';
+import {handel27} from '../helper_functions1/W116-26cm';
+import {handel28} from '../helper_functions1/W116-NF-32sm';
+import {handel29} from '../helper_functions1/W116-DIN-32cm';
+import {handel30} from '../helper_functions1/W611-Lining';
+import {handel31} from '../helper_functions1/W623-Lining';
 import {createPDF} from '../funcs/exportpdf';
 
 const data = [
@@ -222,7 +222,7 @@ const data4 = [
   {label: 'متفرقه با ضخامت 0.58', value: '058'},
 ];
 
-const Home = () => {
+const Home1 = () => {
   const [saze, setSaze] = useState(null);
   const [isFocusS, setIsFocusS] = useState(false);
   const [value, setValue] = useState(null);
@@ -470,10 +470,7 @@ const Home = () => {
     )}</td></tr></tbody></table></body>`;
 
     createPDF(head);
-
-
   };
-
 
   const handlepdf1 = () => {
     let head = `<head><style>td${'{border:1px solid black;}'}</style></head><body><table><thead<tr><td>مصالح</td><td>متراژ مصرفی</td><td>قیمت${o}</td></tr></thead><tbody>`;
@@ -489,8 +486,6 @@ const Home = () => {
     )}</td></tr></tbody></table></body>`;
 
     createPDF(head);
-
-
   };
 
   return (
@@ -799,4 +794,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default React.memo(Home);
+export default React.memo(Home1);

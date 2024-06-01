@@ -21,9 +21,7 @@ const data = [
   {n: 'پیچ رولپلاگ m6*60mm', z: 1.4},
   {n: 'RG 12.5', z: 1},
   {n: 'TN25', z: 17},
-  {n: 'بتونه درزگیر', z: 0.35},
-  {n: 'پودر ماستیک(1)', z: 0.5},
-  {n: 'نوار درزگیر', z: 1.1},
+
 ];
 export async function handel3(v, o) {
   const price = [];
