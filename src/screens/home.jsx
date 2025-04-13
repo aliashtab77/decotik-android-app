@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   ScrollView,
   StyleSheet,
@@ -6,6 +6,7 @@ import {
   TextInput,
   ToastAndroid,
   View,
+  PermissionsAndroid,
 } from 'react-native';
 import {Dropdown} from 'react-native-element-dropdown';
 import Ripple from 'react-native-material-ripple';
@@ -42,6 +43,7 @@ import {handel29} from '../helper_functions/W116-DIN-32cm';
 import {handel30} from '../helper_functions/W611-Lining';
 import {handel31} from '../helper_functions/W623-Lining';
 import {createPDF} from '../funcs/exportpdf';
+import {givePermissionsFromUser} from '../funcs/per';
 
 const data = [
   {label: '(A)D112' + 'سقف کاذب یکپارچه(آویز ترکیبی)', value: '1'},
@@ -240,6 +242,18 @@ const Home = () => {
   const [fibalPrice, setFibalPrice] = useState(0);
   // @ts-ignore
 
+  useEffect(() => {
+    givePermissionsFromUser([
+      PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
+      PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
+    ])
+      .then(() => {
+        console.log('permision granted');
+      })
+      .catch(() => {
+        console.warn('permision denied');
+      });
+  }, []);
   const handelshow = () => {
     if (v == null) {
       ToastAndroid.show('لطفا مقدار را وارد نمایید', ToastAndroid.SHORT);
@@ -470,10 +484,7 @@ const Home = () => {
     )}</td></tr></tbody></table></body>`;
 
     createPDF(head);
-
-
   };
-
 
   const handlepdf1 = () => {
     let head = `<head><style>td${'{border:1px solid black;}'}</style></head><body><table><thead<tr><td>مصالح</td><td>متراژ مصرفی</td><td>قیمت${o}</td></tr></thead><tbody>`;
@@ -489,8 +500,6 @@ const Home = () => {
     )}</td></tr></tbody></table></body>`;
 
     createPDF(head);
-
-
   };
 
   return (

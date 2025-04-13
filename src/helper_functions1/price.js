@@ -1,6 +1,6 @@
 export function givePrices() {
   return new Promise((resolve, reject) => {
-    fetch('https://starkteamdecotikapplication.pythonanywhere.com/kplus/')
+    fetch('https://decoticarash.pythonanywhere.com/kplus/')
       .then(response => response.json())
       .then(data => {
         // do something with the JSON data
@@ -14,7 +14,7 @@ export function givePrices() {
 }
 export function givePrices042() {
   return new Promise((resolve, reject) => {
-    fetch('https://starkteamdecotikapplication.pythonanywhere.com/042/')
+    fetch('https://decoticarash.pythonanywhere.com/042/')
       .then(response => response.json())
       .then(data => {
         // do something with the JSON data
@@ -28,7 +28,7 @@ export function givePrices042() {
 }
 export function givePrices046() {
   return new Promise((resolve, reject) => {
-    fetch('https://starkteamdecotikapplication.pythonanywhere.com/046/')
+    fetch('https://decoticarash.pythonanywhere.com/046/')
       .then(response => response.json())
       .then(data => {
         // do something with the JSON data
@@ -43,7 +43,7 @@ export function givePrices046() {
 
 export function givePrices048() {
   return new Promise((resolve, reject) => {
-    fetch('https://starkteamdecotikapplication.pythonanywhere.com/048/')
+    fetch('https://decoticarash.pythonanywhere.com/048/')
       .then(response => response.json())
       .then(data => {
         // do something with the JSON data
@@ -58,7 +58,7 @@ export function givePrices048() {
 
 export function givePrices055() {
   return new Promise((resolve, reject) => {
-    fetch('https://starkteamdecotikapplication.pythonanywhere.com/055/')
+    fetch('https://decoticarash.pythonanywhere.com/055/')
       .then(response => response.json())
       .then(data => {
         // do something with the JSON data
@@ -73,7 +73,7 @@ export function givePrices055() {
 
 export function givePrices058() {
   return new Promise((resolve, reject) => {
-    fetch('https://starkteamdecotikapplication.pythonanywhere.com/058/')
+    fetch('https://decoticarash.pythonanywhere.com/058/')
       .then(response => response.json())
       .then(data => {
         // do something with the JSON data
